@@ -1,0 +1,7 @@
+#COMMENTO NOME SERVER 
+Host <serverPippo>
+  Hostname <ip_privato_serverPippo>
+  IdentityFile <path_chiave.pem>
+  ForwardAgent yes
+  User <utente>
+  ProxyCommand ssh -W %h:%p <utente_bastion>@<ip_bastion> -i <path_chiave.pem>.pem
